@@ -2,8 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --transition-duration: 250ms;
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  src: local("Poppins"),
+    url(../public/fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 800;
+  src: local("Poppins"),
+    url(../public/fonts/Poppins-SemiBold.ttf) format("truetype");
+}
+
+html {
+  font-family: Poppins, serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  text-size-adjust: none;
 }
 
 * {
@@ -25,7 +42,7 @@ body {
 }
 
 * {
-  --transition-duration: 250ms;
+  --transition-duration: 200ms;
   --transition-naming-function: ease-in-out;
   transition: fill var(--transition-duration) var(--transition-naming-function),
               stroke var(--transition-duration) var(--transition-naming-function),

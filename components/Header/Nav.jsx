@@ -21,9 +21,9 @@ const Nav = () => (
       {navLinks.map((link) => (
         <li
           key={link.href}
-          className="border-b-transparent hover:border-b-current border-b-2 hover:text-lavender"
+          className="border-b-transparent hover:border-b-current border-b-2 text-text hover:text-lavender"
         >
-          <Link href={link.href} className="py-6 px-4 block">
+          <Link href={link.href} className="py-6 px-4 block font-bold">
             {link.text}
           </Link>
         </li>
