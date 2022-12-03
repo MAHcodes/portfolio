@@ -21,6 +21,7 @@ html {
   font-weight: 400;
   scroll-behavior: smooth;
   text-size-adjust: none;
+  @apply bg-base text-text scroll-pt-24;
 }
 
 * {

@@ -44,8 +44,8 @@ const Header = () => {
           setNavVisibility={setNavVisibility}
           navVisibility={navVisibility}
         />
-        <List items={navLinks} visible={navVisibility} col />
-        <List items={icons} visible={navVisibility} />
+        <List items={navLinks} visible={navVisibility} setVisible={setNavVisibility} col />
+        <List items={icons} visible={navVisibility} setVisible={setNavVisibility} />
       </div>
     </header>
   );
