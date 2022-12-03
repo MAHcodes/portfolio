@@ -23,6 +23,10 @@ module.exports = {
         fadeIn: "fadeIn 350ms ease-in-out forwards",
         slide: "slide 20s linear infinite both alternate",
       },
+      boxShadow: {
+        "btnUp": "3px 4px 0 0px #0006",
+        "btnDown": "1px 2px 0 0px #0006",
+      },
     },
   },
   plugins: [
