@@ -15,13 +15,13 @@ module.exports = {
             transform: "translate(0, 0) scale(30) rotate(-45deg)",
           },
           "100%": {
-            transform: "translate(40vw, -40vw) scale(20) rotate(-45deg)",
+            transform: "translate(80vw, -80vw) scale(20) rotate(-45deg)",
           },
         },
       },
       animation: {
         fadeIn: "fadeIn 350ms ease-in-out forwards",
-        slide: "slide 20s linear infinite both alternate",
+        slide: "slide 30s linear infinite both alternate",
       },
       boxShadow: {
         "btnUp": "3px 4px 0 0px #0006",
