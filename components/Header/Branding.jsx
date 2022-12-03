@@ -5,9 +5,9 @@ import HamburgerMenu from "./HamburgerMenu";
 const Branding = ({ navVisibility, setNavVisibility }) => {
   return (
     <div className="flex items-center justify-between w-full md:w-fit">
-      <Link href="/" className="">
+      <Link href="/" className="translate-x-8 opacity-0 animate-fadeIn group">
         <Logo
-          className="group my-5"
+          className="my-5"
           fill="fill-text group-hover:fill-lavender"
           stroke="stroke-text group-hover:stroke-lavender"
         />

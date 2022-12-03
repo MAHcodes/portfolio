@@ -2,7 +2,6 @@ import Branding from "./Branding";
 import List from "./List";
 import GitHub from "../icons/GitHub";
 import LinkedIn from "../icons/LinkedIn";
-import Slack from "../icons/Slack";
 import { useState } from "react";
 
 const navLinks = [
@@ -29,18 +28,14 @@ const icons = [
     href: "https://www.linkedin.com/in/mah-codes-66b0671b7/",
     Icon: LinkedIn,
   },
-  {
-    href: "https://www",
-    Icon: Slack,
-  },
 ];
 
 const Header = () => {
   const [navVisibility, setNavVisibility] = useState(false);
 
   return (
-    <header className="container rounded-b-lg bg-crust fixed top-0 left-0 right-0 mx-auto">
-      <div className="px-2 flex items-center justify-between gap-4 flex-col md:flex-row">
+    <header className="container rounded-b-lg bg-crust fixed z-10 top-0 left-0 right-0 mx-auto">
+      <div className="flex items-center justify-between gap-4 flex-col md:flex-row">
         <Branding setNavVisibility={setNavVisibility} navVisibility={navVisibility} />
         <List items={navLinks} visible={navVisibility} col />
         <List items={icons} visible={navVisibility} />

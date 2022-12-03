@@ -28,13 +28,17 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+*::selection {
+  @apply text-base bg-lavender;
+}
+
 svg,
 img {
   -webkit-user-drag: none;
 }
 
 .container {
-  @apply mx-auto px-4;
+  @apply mx-auto px-6;
 }
 
 body {

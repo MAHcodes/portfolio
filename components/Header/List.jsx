@@ -5,7 +5,7 @@ const List = ({ items, col, visible }) => (
     {items.map((item, idx) => (
       <li
         key={item.href}
-        className={`group border-b-transparent border-b-2 hover:text-lavender text-text ${col ? null : "hover:border-b-current" } md:hover:border-b-current  animate-fadeIn`}
+        className={`group border-b-transparent border-b-2 hover:text-lavender text-text ${col ? null : "hover:border-b-current" } md:hover:border-b-current translate-x-8 opacity-0 animate-fadeIn`}
         style={{animationDelay: `${idx * 100}ms`}}
       >
         {item.Icon ? (
