@@ -1,14 +1,15 @@
 import Link from "next/link";
 
-const List = ({ items }) => (
-  <ul className="flex items-center">
-    {items.map((item) => (
+const List = ({ items, col, visible }) => (
+  <ul className={`${col ? "flex-col md:flex-row" : null} ${visible ? "flex" : "hidden md:flex"} items-center`}>
+    {items.map((item, idx) => (
       <li
-        key={item.key}
-        className="border-b-transparent hover:border-b-current border-b-2 hover:text-lavender text-text"
+        key={item.href}
+        className={`group border-b-transparent border-b-2 hover:text-lavender text-text ${col ? null : "hover:border-b-current" } md:hover:border-b-current  animate-fadeIn`}
+        style={{animationDelay: `${idx * 100}ms`}}
       >
         {item.Icon ? (
-          <a href={item.href} className="py-6 px-4 block font-bold">
+          <a href={item.href} className="py-6 px-4 block font-bold" rel="noreferrer noopener" target="_blank">
             <item.Icon fill="fill-text group-hover:fill-lavender" />
           </a>
         ) : item.text ? (
