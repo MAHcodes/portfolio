@@ -4,7 +4,6 @@ import GitHub from "../icons/GitHub";
 import LinkedIn from "../icons/LinkedIn";
 import Slack from "../icons/Slack";
 import { useState } from "react";
-import { useMediaQuery } from "react-responsive";
 
 const navLinks = [
   {
@@ -38,7 +37,6 @@ const icons = [
 
 const Header = () => {
   const [navVisibility, setNavVisibility] = useState(false);
-  const isMdScreen = useMediaQuery({ minWidth: 768 });
 
   return (
     <header className="container rounded-b-lg bg-crust fixed top-0 left-0 right-0 mx-auto">
