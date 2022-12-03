@@ -43,7 +43,7 @@ const Header = () => {
   return (
     <header className="container rounded-b-lg bg-crust fixed top-0 left-0 right-0 mx-auto">
       <div className="px-2 flex items-center justify-between gap-4 flex-col md:flex-row">
-        <Branding setNavVisibility={setNavVisibility} />
+        <Branding setNavVisibility={setNavVisibility} navVisibility={navVisibility} />
         <List items={navLinks} visible={navVisibility} col />
         <List items={icons} visible={navVisibility} />
       </div>
