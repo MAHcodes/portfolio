@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import { useLayoutEffect } from 'react'
-import Hero from '../components/Hero'
+import Head from "next/head";
+import { useLayoutEffect } from "react";
+import Hero from "../components/Hero";
+import Projects from "../components/Projects";
 
-export default function Home() {
+const Home = () => {
   useLayoutEffect(() => {
-    document.documentElement.className = "latte"
-  }, [])
+    document.documentElement.className = "mocha";
+  }, []);
 
   return (
     <div>
@@ -17,7 +18,10 @@ export default function Home() {
 
       <main>
         <Hero />
+        <Projects />
       </main>
     </div>
-  )
-}
+  );
+};
+
+export default Home;
