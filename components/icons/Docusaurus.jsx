@@ -6,7 +6,7 @@ const Docusaurus = ({ fill, ...props }) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <g fill="none" fill-rule="evenodd" opacity=".75">
+    <g fill="none" fillRule="evenodd" opacity=".75">
       <path
         d="M23 163c-7.398 0-13.843-4.027-17.303-10A19.886 19.886 0 003 163c0 11.046 8.954 20 20 20h20v-20H23z"
         fill="#3ECC5F"

@@ -3,14 +3,14 @@ import TechStackList from "./TechStackList";
 import WorkButtons from "./WorkButtons";
 import { myWork } from "../constants/myWork";
 import Arrow from "./icons/Arrow";
+import { Fragment } from "react";
 
 const Work = () => (
   <section>
     <div id="work">
       {myWork.map((work, i) => (
-        <>
+        <Fragment key={work.url}>
           <div
-            key={work.url}
             className={`flex justify-between flex-col gap-8 hover:shadow-lg transition-shadow bg-crust rounded-lg p-4 items-stretch container ${i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
               }`}
           >
@@ -33,11 +33,14 @@ const Work = () => (
           </div>
           {i < myWork.length - 1 ? (
             <Arrow
-              className={`w-24 ${i % 2 === 0 ? "rotate-45 ml-auto md:-translate-x-[200%]" : "-rotate-45 scale-x-[-1] md:translate-x-[200%]"}`}
+              className={`w-24 ${i % 2 === 0
+                  ? "rotate-45 ml-auto md:-translate-x-[200%]"
+                  : "-rotate-45 scale-x-[-1] md:translate-x-[200%]"
+                }`}
               stroke="stroke-overlay0"
             />
           ) : null}
-        </>
+        </Fragment>
       ))}
     </div>
   </section>

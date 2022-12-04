@@ -31,7 +31,7 @@ export const myWork = [
     thumbnail: "/images/xerolinux.avif",
     title: "xerolinux.xyz",
     description:
-      "Official Page for the Arch Based Linux Distro XeroLinux...",
+      "Official Page for the Arch Based Linux Distro XeroLinux... designed and built from scratch using ReactJS.",
     techStack: {
       design: [figma],
       frontend: [reactjs, styledcomponents],
