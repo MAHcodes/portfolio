@@ -3,7 +3,7 @@ import GitHub from "./icons/GitHub";
 import ExternalLink from "./icons/ExternalLink";
 
 const WorkButtons = ({url, sourceCode}) => (
-  <div className="flex items-center py-4 gap-2 flex-col sm:flex-row">
+  <div className="flex items-center pt-4 gap-2 flex-col sm:flex-row">
     <a
       href={url}
       target="_blank"

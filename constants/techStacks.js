@@ -7,6 +7,7 @@ import Redux from "../components/icons/Redux";
 import GraphQL from "../components/icons/GraphQL";
 import ReactJS from "../components/icons/ReactJS";
 import TypeScript from "../components/icons/TypeScript";
+import StyledComponents from "../components/icons/StyledComponents";
 
 export const figma = {
   name: "Figma",
@@ -60,4 +61,10 @@ export const typescript = {
   name: "TypeScript",
   url: "https://www.typescriptlang.org/",
   Icon: TypeScript,
+};
+
+export const styledcomponents = {
+  name: "styled components",
+  url: "https://styled-components.com/",
+  Icon: StyledComponents,
 };

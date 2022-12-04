@@ -9,12 +9,12 @@ const Work = () => (
       {myWork.map((work, i) => (
         <div
           key={work.url}
-          className={`flex justify-between flex-col gap-8 px-4 bg-crust rounded-lg py-4 items-stretch ${
+          className={`flex justify-between flex-col gap-8 mb-6 px-4 bg-crust rounded-lg py-4 items-stretch ${
             i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
           }`}
         >
           <WebView url={work.url} src={work.thumbnail} alt={work.title} />
-          <div className="flex-06">
+          <div className="flex-06 flex items-stretch flex-col justify-start">
             <h3 className="font-bold text-3xl">
               <a
                 href={work.url}
