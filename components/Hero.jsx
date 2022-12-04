@@ -21,7 +21,7 @@ const Hero = () => (
       <div className="flex items-center gap-3 mb-8">
         <Link href="#work">
           <Button variant="primary" size="lg">
-            Work
+            My Work
           </Button>
         </Link>
         <Link href="#contact">
