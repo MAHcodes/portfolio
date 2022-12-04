@@ -9,6 +9,10 @@ import ReactJS from "../components/icons/ReactJS";
 import TypeScript from "../components/icons/TypeScript";
 import StyledComponents from "../components/icons/StyledComponents";
 import Docusaurus from "../components/icons/Docusaurus";
+import HTML from "../components/icons/HTML";
+import CSS from "../components/icons/CSS";
+import JavaScript from "../components/icons/JavaScript";
+import Firebase from "../components/icons/Firebase";
 
 export const figma = {
   name: "Figma",
@@ -74,4 +78,28 @@ export const docusaurus = {
   name: "Docusaurus",
   url: "https://docusaurus.io/",
   Icon: Docusaurus,
+};
+
+export const html = {
+  name: "HTML",
+  url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  Icon: HTML,
+};
+
+export const css = {
+  name: "CSS",
+  url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  Icon: CSS,
+};
+
+export const javascript = {
+  name: "JavaScript",
+  url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  Icon: JavaScript,
+};
+
+export const firebase = {
+  name: "Firebase",
+  url: "https://firebase.google.com",
+  Icon: Firebase,
 };

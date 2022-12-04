@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useLayoutEffect } from "react";
 import Hero from "../components/Hero";
+import Skills from "../components/Skills";
 import Work from "../components/Work";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       <main>
         <Hero />
         <Work />
+        <Skills />
       </main>
     </div>
   );
