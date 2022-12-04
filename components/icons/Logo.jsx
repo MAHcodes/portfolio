@@ -58,11 +58,6 @@ const Logo = ({ fill, stroke, ...props }) => (
       fill="black"
       className={fill}
     />
-    <defs>
-      <clipPath id="clip0_3_26">
-        <rect width="104.497" height="30" fill="white" />
-      </clipPath>
-    </defs>
   </svg>
 );
 

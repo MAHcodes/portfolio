@@ -19,9 +19,9 @@ const Hero = () => (
         I craft <span className="font-bold">AWESOME</span> websites with ️❤️
       </p>
       <div className="flex items-center gap-3 mb-8">
-        <Link href="#projects">
+        <Link href="#work">
           <Button variant="primary" size="lg">
-            Projects
+            Work
           </Button>
         </Link>
         <Link href="#contact">

@@ -10,8 +10,8 @@ const navLinks = [
     text: "Home",
   },
   {
-    href: "#projects",
-    text: "Projects",
+    href: "#work",
+    text: "Work",
   },
   {
     href: "#skills",
@@ -38,7 +38,7 @@ const Header = () => {
   const [navVisibility, setNavVisibility] = useState(false);
 
   return (
-    <header className="container rounded-b-lg bg-crust fixed z-10 top-0 left-0 right-0 mx-auto">
+    <header className="container rounded-b-lg bg-crust fixed z-10 top-0 left-0 right-0 mx-auto shadow-md shadow-surface0">
       <div className="flex items-center justify-between gap-4 flex-col md:flex-row">
         <Branding
           setNavVisibility={setNavVisibility}

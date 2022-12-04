@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { useLayoutEffect } from "react";
 import Hero from "../components/Hero";
-import Projects from "../components/Projects";
+import Work from "../components/Work";
 
 const Home = () => {
   useLayoutEffect(() => {
-    document.documentElement.className = "mocha";
+    document.documentElement.className = "latte";
   }, []);
 
   return (
@@ -18,7 +18,7 @@ const Home = () => {
 
       <main>
         <Hero />
-        <Projects />
+        <Work />
       </main>
     </div>
   );
