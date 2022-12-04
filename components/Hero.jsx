@@ -5,7 +5,7 @@ import Button from "./Button";
 const Hero = () => (
   <section
     id="hero"
-    className="pt-28 flex items-center justify-between relative overflow-hidden"
+    className="pt-40 py-12 flex items-center justify-between relative overflow-hidden"
     style={{ minHeight: "calc(15vw + 45vh)" }}
   >
     <div className="container w-fit md:w-auto my-auto text-text">

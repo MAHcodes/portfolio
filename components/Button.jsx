@@ -18,6 +18,7 @@ const animateUpDown = "hover:shadow-btnUp hover:tranlate-x-[-1px] hover:translat
 const variants = {
   primary: `text-base bg-peach border-transparent ${animateUpDown}`,
   secondary: `text-peach bg-transparent border-peach ${animateUpDown}`,
+  tertiary: `text-text bg-base border-transparent shadow-md ${animateUpDown}`,
   transparent: "text-peach hover:underline border-transparent",
 };
 

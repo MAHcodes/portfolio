@@ -27,6 +27,10 @@ module.exports = {
         "btnUp": "3px 4px 0 0px #0006",
         "btnDown": "1px 2px 0 0px #0006",
       },
+      flex: {
+        '04': '0.4 1 0%',
+        '06': '0.6 1 0%',
+      },
     },
   },
   plugins: [

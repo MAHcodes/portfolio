@@ -19,9 +19,12 @@
 html {
   font-family: Poppins, serif;
   font-weight: 400;
-  scroll-behavior: smooth;
   text-size-adjust: none;
   @apply bg-base text-text scroll-pt-24;
+}
+
+html, body {
+  scroll-behavior: smooth !important;
 }
 
 * {
