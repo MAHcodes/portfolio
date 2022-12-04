@@ -5,11 +5,10 @@ import ContactInfo from "./ContactInfo";
 import { socials } from "../constants/socials";
 
 const Contact = () => (
-  <section id="contact" className="my-20 lg:mt-32 container">
+  <section id="contact" className="my-20 lg:mt-32 container md:px-0">
     <Title text="Need a Website?" />
     <div className="flex gap-8 items-center justify-center mt-4 flex-col md:flex-row">
-      <Box>
-        <h3 className="text-lg pb-8 font-bold">Contact me</h3>
+      <Box title="Contact me">
         <ContactInfo
           href="mailto:contact@mah.codes"
           Icon={Email}
@@ -21,8 +20,7 @@ const Contact = () => (
           text="+961 81 921 320"
         />
       </Box>
-      <Box>
-        <h3 className="text-lg pb-8 font-bold">Follow me on</h3>
+      <Box title="Follow me on">
         {socials.map((social) => (
           <ContactInfo
             key={social.href}
@@ -36,8 +34,9 @@ const Contact = () => (
   </section>
 );
 
-const Box = ({ children }) => (
+const Box = ({ children, title }) => (
   <div className="flex items-center flex-col gap-4 justify-between p-8 rounded-md shadow-md w-full">
+    <h3 className="text-lg text-text pb-8 font-bold">{title}</h3>
     {children}
   </div>
 );

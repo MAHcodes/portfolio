@@ -7,7 +7,7 @@ import { Fragment } from "react";
 
 const Work = () => (
   <section>
-    <div id="work">
+    <div id="work" className="overflow-hidden">
       {myWork.map((work, i) => (
         <Fragment key={work.url}>
           <div
@@ -26,7 +26,7 @@ const Work = () => (
                   {work.title}
                 </a>
               </h3>
-              <p className="py-4">{work.description}</p>
+              <p className="py-4 text-text">{work.description}</p>
               <TechStackList techStack={work.techStack} />
               <WorkButtons url={work.url} sourceCode={work.sourceCode} />
             </div>

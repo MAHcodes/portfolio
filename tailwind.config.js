@@ -24,8 +24,8 @@ module.exports = {
         slide: "slide 30s linear infinite both alternate",
       },
       boxShadow: {
-        "btnUp": "3px 4px 0 0px #0006",
-        "btnDown": "1px 2px 0 0px #0006",
+        "btnUp": "3px 4px 0 0px rgb(var(--ctp-text))",
+        "btnDown": "1px 2px 0 0px rgb(var(--ctp-text))",
       },
       flex: {
         '04': '0.4 1 0%',

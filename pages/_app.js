@@ -1,14 +1,17 @@
-import Header from '../components/Header/'
-import '../styles/reset.css'
-import '../styles/globals.css'
-import Footer from '../components/Footer'
+import Header from "../components/Header/";
+import "../styles/reset.css";
+import "../styles/globals.css";
+import Footer from "../components/Footer";
+import ThemeContextProvider from "../contexts/ThemeContexts";
 
 function MyApp({ Component, pageProps }) {
-  return <>
-    <Header />
-    <Component {...pageProps} />
-    <Footer />
-    </>
+  return (
+    <ThemeContextProvider>
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
+    </ThemeContextProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
