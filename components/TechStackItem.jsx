@@ -16,7 +16,8 @@ const TechStackItem = ({ items, title }) => (
           <Button
             variant="tertiary"
             size="md"
-            icon={<item.Icon fill="fill-text" />}
+            className="group hover:text-lavender"
+            icon={<item.Icon fill="fill-text group-hover:fill-lavender" />}
           >
             {item.name}
           </Button>
