@@ -28,7 +28,7 @@ const Header = () => {
   const offsetY = useScroll();
 
   return (
-    <header className={`container rounded-b-lg fixed z-10 top-0 left-0 right-0 mx-auto shadow-surface0 transition-all duration-500 ${offsetY >= 100 ? "shadow-md bg-crust" : ""}`}>
+    <header className={`container rounded-b-lg fixed z-10 top-0 left-0 right-0 mx-auto shadow-surface0 transition-all duration-500 ${(offsetY >= 100) || navVisibility ? "shadow-md bg-crust" : ""}`}>
       <div className="flex items-center justify-between gap-4 flex-col md:flex-row">
         <Branding
           setNavVisibility={setNavVisibility}
