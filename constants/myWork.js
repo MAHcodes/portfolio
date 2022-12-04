@@ -17,7 +17,7 @@ export const myWork = [
     thumbnail: "/images/canadiansouq.avif",
     title: "canadiansouq.com",
     description:
-      "This is my best project I built, because I'm the owner of the business, So I made my own decisions with everything.",
+      "This is my best project I built, because I'm the owner of the business, So I made my own decisions.",
     techStack: {
       design: [figma],
       frontend: [nextjs, typescript, redux, tailwindcss, storybook],

@@ -20,12 +20,12 @@ const Hero = () => (
       <div className="flex items-center gap-3 mb-8 relative">
         <Link href="#work">
           <Button variant="primary" size="lg">
-            My Work
+            See my Work
           </Button>
         </Link>
         <Link href="#contact">
           <Button variant="secondary" size="lg">
-            Contact
+            Get in touch!
           </Button>
         </Link>
         <Arrow

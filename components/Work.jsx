@@ -11,7 +11,7 @@ const Work = () => (
         <>
           <div
             key={work.url}
-            className={`flex justify-between flex-col gap-8 hover:shadow-lg bg-crust rounded-lg p-4 items-stretch container ${i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+            className={`flex justify-between flex-col gap-8 hover:shadow-lg transition-shadow bg-crust rounded-lg p-4 items-stretch container ${i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
               }`}
           >
             <WebView url={work.url} src={work.thumbnail} alt={work.title} />
@@ -33,7 +33,7 @@ const Work = () => (
           </div>
           {i < myWork.length - 1 ? (
             <Arrow
-              className={`w-24 ${i % 2 === 0 ? "rotate-45 ml-auto -translate-x-[200%]" : "-rotate-45 scale-x-[-1] translate-x-[200%]"}`}
+              className={`w-24 ${i % 2 === 0 ? "rotate-45 ml-auto md:-translate-x-[200%]" : "-rotate-45 scale-x-[-1] md:translate-x-[200%]"}`}
               stroke="stroke-overlay0"
             />
           ) : null}

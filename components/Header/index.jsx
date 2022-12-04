@@ -1,8 +1,7 @@
 import Branding from "./Branding";
 import List from "./List";
-import GitHub from "../icons/GitHub";
-import LinkedIn from "../icons/LinkedIn";
 import { useState } from "react";
+import { socials } from "../../constants/socials";
 
 const navLinks = [
   {
@@ -23,17 +22,6 @@ const navLinks = [
   },
 ];
 
-const icons = [
-  {
-    href: "https://github.com/MAHcodes",
-    Icon: GitHub,
-  },
-  {
-    href: "https://www.linkedin.com/in/mah-codes-66b0671b7/",
-    Icon: LinkedIn,
-  },
-];
-
 const Header = () => {
   const [navVisibility, setNavVisibility] = useState(false);
 
@@ -45,7 +33,7 @@ const Header = () => {
           navVisibility={navVisibility}
         />
         <List items={navLinks} visible={navVisibility} setVisible={setNavVisibility} col />
-        <List items={icons} visible={navVisibility} setVisible={setNavVisibility} />
+        <List items={socials} visible={navVisibility} setVisible={setNavVisibility} />
       </div>
     </header>
   );
