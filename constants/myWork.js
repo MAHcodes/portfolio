@@ -52,7 +52,7 @@ export const myWork = [
     sourceCode: "https://github.com/LunarVim/lunarvim.org",
   },
   {
-    thumbnail: "/images/mahcodes.png",
+    thumbnail: "/images/mahcodes.avif",
     title: "MAH.codes",
     description:
       "My personal portfolio, built within 48 hours, check the git history on github for proof.",
