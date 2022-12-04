@@ -7,7 +7,7 @@ import Profile from "./icons/Profile";
 const Hero = () => (
   <section
     id="hero"
-    className="pt-32 lg:pt-52 pb-32 lg:pb-36 flex flex-col-reverse lg:flex-row items-center justify-between relative overflow-hidden container"
+    className="pt-32 lg:pt-52 pb-32 lg:pb-36 flex flex-col-reverse lg:flex-row items-center justify-between relative overflow-hidden container gap-8"
   >
     <div className="w-fit md:w-auto my-auto text-text">
       <h3>Hello👋 I&apos;m a</h3>

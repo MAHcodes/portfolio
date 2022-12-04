@@ -3,6 +3,7 @@ import { useLayoutEffect } from "react";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Work from "../components/Work";
+import Contact from "../components/Contact";
 
 const Home = () => {
   useLayoutEffect(() => {
@@ -22,6 +23,7 @@ const Home = () => {
         <Hero />
         <Work />
         <Skills />
+        <Contact />
       </main>
     </div>
   );
