@@ -5,11 +5,11 @@ import { myWork } from "../constants/myWork";
 
 const Work = () => (
   <section>
-    <div id="work" className="container">
+    <div id="work" >
       {myWork.map((work, i) => (
         <div
           key={work.url}
-          className={`flex justify-between flex-col gap-8 mb-6 px-4 bg-crust rounded-lg py-4 items-stretch ${
+          className={`flex justify-between flex-col gap-8 mb-6 bg-crust rounded-lg p-4 lg:p-8 items-stretch container ${
             i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
           }`}
         >
