@@ -10,14 +10,16 @@ const ThemeToggle = () => {
   };
 
   return (
-    <li className="mocha latte flex items-center py-6 px-4 ">
-      <DarkModeSwitch
-        moonColor="#cdd6f4"
-        sunColor="#4c4f69"
-        checked={isDarkTheme}
-        onChange={handleToggle}
-        size={28}
-      />
+    <li className="mocha latte flex items-center py-6 px-4 translate-x-8 opacity-0 animate-fadeIn delay-500">
+      <button>
+        <DarkModeSwitch
+          checked={isDarkTheme}
+          onChange={handleToggle}
+          size={28}
+          moonColor="#cdd6f4"
+          sunColor="#4c4f69"
+        />
+      </button>
     </li>
   );
 };

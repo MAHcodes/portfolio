@@ -10,12 +10,29 @@ const Hero = () => (
     className="pt-32 lg:pt-52 pb-32 lg:pb-36 flex flex-col-reverse lg:flex-row items-center justify-between relative overflow-hidden container gap-8"
   >
     <div className="w-fit md:w-auto my-auto text-text">
-      <h3>Hello👋 I&apos;m a</h3>
+      <h3 className="flex gap-2 items-center">
+        Hello
+        <img
+          src="/images/hi.gif"
+          width="24"
+          height="24"
+          alt="hand wavying gif"
+        />
+        I&apos;m a
+      </h3>
       <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-lavender pt-4 pb-8">
         Frontend Developer
       </h1>
-      <p className="text-xl mb-8">
-        I craft <span className="font-bold">AWESOME</span> websites with ️❤️
+      <p className="text-xl mb-8 flex items-center gap-2">
+        I craft <span className="font-bold">AWESOME</span> websites with{" "}
+        <span>
+          <img
+            src="/images/heart.gif"
+            width="24"
+            height="24"
+            alt="heart on fire gif"
+          />
+        </span>
       </p>
       <div className="flex items-center gap-3 mb-8 relative">
         <Link href="#work">
