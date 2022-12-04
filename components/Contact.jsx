@@ -7,7 +7,7 @@ import { socials } from "../constants/socials";
 const Contact = () => (
   <section id="contact" className="my-20 lg:mt-32 container">
     <Title text="Need a Website?" />
-    <div className="flex gap-8 items-center justify-center mt-4">
+    <div className="flex gap-8 items-center justify-center mt-4 flex-col md:flex-row">
       <Box>
         <h3 className="text-lg pb-8 font-bold">Contact me</h3>
         <ContactInfo
@@ -37,7 +37,7 @@ const Contact = () => (
 );
 
 const Box = ({ children }) => (
-  <div className="flex items-center flex-col gap-4 justify-between p-8 rounded-md shadow-md">
+  <div className="flex items-center flex-col gap-4 justify-between p-8 rounded-md shadow-md w-full">
     {children}
   </div>
 );

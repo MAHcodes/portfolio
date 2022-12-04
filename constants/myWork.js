@@ -51,4 +51,16 @@ export const myWork = [
     url: "https://lunarvim.org",
     sourceCode: "https://github.com/LunarVim/lunarvim.org",
   },
+  {
+    thumbnail: "/images/mahcodes.png",
+    title: "MAH.codes",
+    description:
+      "My personal portfolio, built within 48 hours, check the git history on github for proof.",
+    techStack: {
+      design: [figma],
+      frontend: [nextjs, tailwindcss],
+    },
+    url: "https://mah.codes",
+    sourceCode: "https://github.com/MAHcodes/portfolio",
+  },
 ];
