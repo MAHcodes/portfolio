@@ -8,6 +8,7 @@ import GraphQL from "../components/icons/GraphQL";
 import ReactJS from "../components/icons/ReactJS";
 import TypeScript from "../components/icons/TypeScript";
 import StyledComponents from "../components/icons/StyledComponents";
+import Docusaurus from "../components/icons/Docusaurus";
 
 export const figma = {
   name: "Figma",
@@ -67,4 +68,10 @@ export const styledcomponents = {
   name: "styled components",
   url: "https://styled-components.com/",
   Icon: StyledComponents,
+};
+
+export const docusaurus = {
+  name: "Docusaurus",
+  url: "https://docusaurus.io/",
+  Icon: Docusaurus,
 };

@@ -1,7 +1,7 @@
 const WebView = ({ alt, src, url }) => (
   <div className="flex-04 relative overflow-y-auto aspect-video rounded-md border-2 border-text">
     <div className="sticky top-0 bg-base flex gap-2 px-2 py-1 items-center border-b-text border">
-      <div className="flex items-center gap-1 min-w-max">
+      <div className="flex items-center gap-1 min-w-max rounded-md">
         <Btn bgColor="#FF605C" />
         <Btn bgColor="#FFBD44" />
         <Btn bgColor="#00CA4E" />
