@@ -34,8 +34,8 @@ const Work = () => (
           {i < myWork.length - 1 ? (
             <Arrow
               className={`w-24 ${i % 2 === 0
-                  ? "rotate-45 mx-auto translate-x-[100%] md:translate-x-[400%] lg:translate-x-[600%]"
-                  : "-rotate-45 mx-auto scale-x-[-1] -translate-x-[100%] md:-translate-x-[400%] lg:-translate-x-[600%]"
+                  ? "rotate-45 mx-auto translate-x-[100%] md:translate-x-[300%] lg:translate-x-[500%]"
+                  : "-rotate-45 mx-auto scale-x-[-1] -translate-x-[100%] md:-translate-x-[300%] lg:-translate-x-[500%]"
                 }`}
               stroke="stroke-overlay0"
             />

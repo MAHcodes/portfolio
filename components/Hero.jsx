@@ -23,9 +23,9 @@ const Hero = () => (
       <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-lavender pt-4 pb-8">
         Frontend Developer
       </h1>
-      <p className="text-xl mb-8 flex items-center gap-2">
-        I craft <span className="font-bold">AWESOME</span> websites with{" "}
-        <span>
+      <p className="text-xl mb-8">
+        I craft <span className="font-bold">AWESOME</span> websites with
+        <span className="inline-flex pl-1">
           <img
             src="/images/heart.gif"
             width="24"
@@ -34,19 +34,19 @@ const Hero = () => (
           />
         </span>
       </p>
-      <div className="flex items-center gap-3 mb-8 relative">
-        <Link href="#work">
-          <Button variant="primary" size="lg">
+      <div className="flex flex-col-reverse sm:flex-row items-center gap-3 mb-8 relative">
+        <Link href="#work" className="w-full sm:w-auto">
+          <Button variant="primary" size="lg" className="w-full sm:w-auto">
             See my Work
           </Button>
         </Link>
-        <Link href="#contact">
-          <Button variant="secondary" size="lg">
+        <Link href="#contact" className="w-full sm:w-auto">
+          <Button variant="secondary" size="lg" className="w-full sm:w-auto">
             Get in touch!
           </Button>
         </Link>
         <Arrow
-          className="absolute left-0 bottom-0 lg:-translate-x-12 translate-y-full w-24 scale-x-[-1] -rotate-45"
+          className="absolute left-0 bottom-0 lg:-translate-x-18 translate-y-full w-24 scale-x-[-1] -rotate-45"
           stroke="stroke-overlay0"
         />
       </div>
