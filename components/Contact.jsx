@@ -35,7 +35,7 @@ const Contact = () => (
 );
 
 const Box = ({ children, title }) => (
-  <div className="flex items-center flex-col gap-4 justify-between p-8 rounded-md shadow-md w-full">
+  <div className="flex items-center flex-col gap-4 justify-between p-8 rounded-md shadow-sm w-full shadow-text">
     <h3 className="text-lg text-text pb-8 font-bold">{title}</h3>
     {children}
   </div>
