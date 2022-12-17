@@ -5,7 +5,7 @@ import TechStackItem from "./TechStackItem";
 const Skills = () => (
   <section id="skills" className="container mt-20 lg:mt-32">
     <Title text="My Skills" />
-    <TechStackItem items={Object.values(SKILLS).sort((a, b) => a > b ? 1 : 0)} center />
+    <TechStackItem items={Object.values(SKILLS).sort((a, b) => a.name > b.name ? 1 : 0)} center />
   </section>
 )
 export default Skills;

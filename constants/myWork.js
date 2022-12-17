@@ -43,7 +43,7 @@ export const myWork = [
     thumbnail: "/images/lunarvim.avif",
     title: "lunarvim.org",
     description:
-      "LunarVim is an open source porject, my contribution is desining and building the landing page.",
+      "LunarVim is an open source porject, my contribution is designing and building the landing page.",
     techStack: {
       design: [figma],
       frontend: [reactjs, docusaurus],
