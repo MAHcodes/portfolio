@@ -23,7 +23,7 @@ const variants = {
 
 const Button = ({className, size, variant, icon, iconAfter, disabled, children, title, ...props}) => (
     <button
-      ariaLabel={title}
+      aria-label={title}
       title={title}
       className={`rounded-md font-bold text-base flex items-center justify-center cursor-pointer border-2 gap-2 
          ${disabled ? "cursor-not-allowed opacity-40" : ""}

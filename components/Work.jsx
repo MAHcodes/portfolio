@@ -16,7 +16,7 @@ const Work = () => (
           >
             <WebView url={work.url} src={work.thumbnail} alt={work.title} />
             <div className="flex-06 flex items-stretch flex-col justify-start">
-              <h3 className="font-bold text-3xl">
+              <h2 className="font-bold text-3xl">
                 <a
                   href={work.url}
                   target="_blank"
@@ -25,7 +25,7 @@ const Work = () => (
                 >
                   {work.title}
                 </a>
-              </h3>
+              </h2>
               <p className="py-4 text-text">{work.description}</p>
               <TechStackList techStack={work.techStack} />
               <WorkButtons url={work.url} sourceCode={work.sourceCode} />

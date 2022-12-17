@@ -2,7 +2,7 @@ import TechStackItem from "./TechStackItem";
 
 const TechStackList = ({techStack}) => (
   <>
-    <h4 className="font-bold text-text text-base my-2">Tech Stack:</h4>
+    <h3 className="font-bold text-text text-base my-2">Tech Stack:</h3>
     {techStack.design?.length > 0 ? (
       <TechStackItem items={techStack.design} title="Design:" />
     ) : null}

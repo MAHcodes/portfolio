@@ -20,11 +20,12 @@ const List = ({ items, col, visible, setVisible }) => (
             className="py-6 px-4 block font-bold"
             rel="noreferrer noopener"
             target="_blank"
+            aria-label={item.title}
           >
             <item.Icon fill="fill-text group-hover:fill-lavender" />
           </a>
         ) : item.text ? (
-          <Link href={item.href} className="py-6 px-4 block font-bold">
+          <Link href={item.href} className="py-6 px-4 block font-bold" aria-label={item.text}>
             {item.text}
           </Link>
         ) : null}

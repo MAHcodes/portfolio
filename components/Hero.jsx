@@ -15,10 +15,10 @@ const Hero = () => (
         <video
           width="24"
           height="24"
-          loop="true"
+          loop={true}
+          autoPlay={true}
           muted
           src="/images/hi.webm"
-          autoplay="true"
           alt="hand wavying hello"
         />
         I&apos;m a
@@ -32,10 +32,10 @@ const Hero = () => (
           <video
             width="24"
             height="24"
-            loop="true"
+            loop={true}
+            autoPlay={true}
             muted
             src="/images/heart.webm"
-            autoplay="true"
             alt="heart on fire, passion"
           />
         </span>
