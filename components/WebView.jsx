@@ -12,7 +12,7 @@ const WebView = ({ alt, src, url }) => (
       </div>
     </div>
     <div className="">
-      <img alt={alt} className="w-full" src={src} />
+      <img width="400" height="800" alt={alt} className="w-full" src={src} />
     </div>
   </div>
 );

@@ -1,4 +1,3 @@
-
 const sizes = {
   lg: "py-3 px-6 text-base",
   md: "py-2 px-4 text-sm",
@@ -22,8 +21,10 @@ const variants = {
   transparent: "text-peach hover:underline border-transparent",
 };
 
-const Button = ({className, size, variant, icon, iconAfter, disabled, children, ...props}) => (
+const Button = ({className, size, variant, icon, iconAfter, disabled, children, title, ...props}) => (
     <button
+      ariaLabel={title}
+      title={title}
       className={`rounded-md font-bold text-base flex items-center justify-center cursor-pointer border-2 gap-2 
          ${disabled ? "cursor-not-allowed opacity-40" : ""}
          ${children ? sizes[size] : iconSized[size]}

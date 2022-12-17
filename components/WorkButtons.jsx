@@ -16,6 +16,7 @@ const WorkButtons = ({ url, sourceCode }) => (
           size="lg"
           className="w-full bg-lavender"
           icon={<ExternalLink fill="fill-base" />}
+          title="Visit"
         >
           Visit
         </Button>
@@ -28,6 +29,7 @@ const WorkButtons = ({ url, sourceCode }) => (
       className="w-full"
     >
       <Button
+        title="Source Code"
         variant="secondary"
         size="lg"
         className="border-lavender text-lavender w-full"

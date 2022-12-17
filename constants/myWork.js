@@ -53,7 +53,7 @@ export const myWork = [
   },
   {
     thumbnail: "/images/mahcodes.avif",
-    title: "MAH.codes",
+    title: "mah.codes",
     description:
       "My personal portfolio, built within 48 hours, check the git history on github for proof.",
     techStack: {

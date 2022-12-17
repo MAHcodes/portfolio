@@ -5,7 +5,7 @@ import HamburgerMenu from "./HamburgerMenu";
 const Branding = ({ navVisibility, setNavVisibility }) => {
   return (
     <div className="flex items-center justify-between w-full md:w-fit">
-      <Link href="/" className="translate-x-8 opacity-0 animate-fadeIn group">
+      <Link href="/" className="translate-x-8 opacity-0 animate-fadeIn group" ariaLabel="MAH.codes Logo">
         <Logo
           className="my-5"
           fill="fill-text group-hover:fill-lavender"

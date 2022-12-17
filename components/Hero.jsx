@@ -10,38 +10,54 @@ const Hero = () => (
     className="pt-32 lg:pt-52 pb-32 lg:pb-36 flex flex-col-reverse lg:flex-row items-center justify-between relative overflow-hidden container gap-8"
   >
     <div className="w-fit md:w-auto my-auto text-text">
-      <h3 className="flex gap-2 items-center">
+      <p className="flex gap-2 items-center">
         Hello
-        <img
-          src="/images/hi.gif"
+        <video
           width="24"
           height="24"
-          alt="hand wavying gif"
+          loop="true"
+          muted
+          src="/images/hi.webm"
+          autoplay="true"
+          alt="hand wavying hello"
         />
         I&apos;m a
-      </h3>
+      </p>
       <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-lavender pt-4 pb-8">
         Frontend Developer
       </h1>
       <p className="text-xl mb-8">
         I craft <span className="font-bold">AWESOME</span> websites with
         <span className="inline-flex pl-1">
-          <img
-            src="/images/heart.gif"
+          <video
             width="24"
             height="24"
-            alt="heart on fire gif"
+            loop="true"
+            muted
+            src="/images/heart.webm"
+            autoplay="true"
+            alt="heart on fire, passion"
           />
         </span>
       </p>
       <div className="flex flex-col-reverse sm:flex-row items-center gap-3 mb-8 relative">
         <Link href="#work" className="w-full sm:w-auto">
-          <Button variant="primary" size="lg" className="w-full sm:w-auto">
+          <Button
+            variant="primary"
+            size="lg"
+            className="w-full sm:w-auto"
+            title="See my Work"
+          >
             See my Work
           </Button>
         </Link>
         <Link href="#contact" className="w-full sm:w-auto">
-          <Button variant="secondary" size="lg" className="w-full sm:w-auto">
+          <Button
+            variant="secondary"
+            size="lg"
+            className="w-full sm:w-auto"
+            title="Get in Touch"
+          >
             Get in touch!
           </Button>
         </Link>

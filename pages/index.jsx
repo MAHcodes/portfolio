@@ -73,7 +73,7 @@ const Home = () => (
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta
         name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"
       />
       <meta name="theme-color" content="#7287fd" />
       <meta
@@ -87,7 +87,6 @@ const Home = () => (
       />
       <meta name="robots" content="index, follow" />
 
-      {/* open graph meta tags */}
       <meta
         property="og:title"
         content="MAHcodes - Frontend Web Developer based in Lebanon"
@@ -103,6 +102,7 @@ const Home = () => (
       <meta property="og:site_name" content={process.env.NEXT_PUBLIC_HOST} />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_US" />
+      <meta property="og:url" content={process.env.NEXT_PUBLIC_HOST} />
 
       {/* twitter meta tags */}
       <meta
@@ -113,7 +113,7 @@ const Home = () => (
         name="twitter:image"
         content={`${process.env.NEXT_PUBLIC_HOST}/profile.jpg`}
       />
-      <meta property="og:url" content={process.env.NEXT_PUBLIC_HOST} />
+      <meta property="twitter:url" content="https://mah.codes/" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"

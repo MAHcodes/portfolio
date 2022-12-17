@@ -14,6 +14,7 @@ const TechStackItem = ({ items, title, center }) => (
           rel="noopener noreferrer"
         >
           <Button
+            title={item.name}
             variant="tertiary"
             size="md"
             className="group hover:text-lavender"
