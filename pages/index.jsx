@@ -99,12 +99,11 @@ const Home = () => (
         property="og:image"
         content={`${process.env.NEXT_PUBLIC_HOST}/profile.jpg`}
       />
-      <meta property="og:site_name" content={process.env.NEXT_PUBLIC_HOST} />
+      <meta property="og:site_name" content="MAHcodes" />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:url" content={process.env.NEXT_PUBLIC_HOST} />
 
-      {/* twitter meta tags */}
       <meta
         name="twitter:description"
         content={`MAHcodes - Frontend Web Developer based in Lebanon, my top skills: ${mySkills}`}
